@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@drawable/main_bg_foggy"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+    <RelativeLayout
+            android:id="@+id/login_top_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true">
+    </RelativeLayout>
+
+    <EditText
+            android:id="@+id/login_usr_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_top_layout"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:singleLine="true"
+            android:background="@drawable/login_editbox"
+            android:hint="@string/login_usr_hint"/>
+
+    <EditText
+            android:id="@+id/login_pwd_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_usr_edit"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/login_editbox"
+            android:password="true"
+            android:singleLine="true"
+            android:hint="@string/login_pwd_hint"/>
+
+    <EditText
+            android:id="@+id/login_pwd_edit2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_pwd_edit"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/login_editbox"
+            android:password="true"
+            android:singleLine="true"
+            android:hint="@string/login_pwd_hint"/>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/login_pwd_edit2"
+            >
+
+        <Button
+                android:id="@+id/register_btn"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:text="@string/login_register"
+                android:background="@drawable/btn_style_red"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                />
+    </RelativeLayout>
+</RelativeLayout>
